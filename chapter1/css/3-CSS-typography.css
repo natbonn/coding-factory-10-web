@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #f4f4f4;;
 }
@@ -26,13 +32,63 @@ nav a:hover {
 }
 
 main {
-    background-color: beige;
-    border: 1px solid black;
+    /* background-color: beige; */
+    /* border: 1px solid black; */
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
+
+section {
+    background-color: lightgray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    border: 5px solid #1e3a5f;
+    border-radius: 10px;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    border: 10px solid black;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+.overflow-box {
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    /* overflow: hidden */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+
 
 
 
