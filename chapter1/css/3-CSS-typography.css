@@ -87,6 +87,22 @@ ul {
     /* overflow: scroll; */
     overflow: auto;
 }
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
 
 
 
