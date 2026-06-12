@@ -87,3 +87,27 @@ h2 {
     margin-right: 20px;
 }
 
+/* Flexible Styling */
+.flex-container {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    justify-content: start;
+    /* justify-content: end; */
+    gap: 20px;
+    /* flex-direction: column; */
+    height: 400px;
+    /* align-items: start; */
+    /* align-items: end; */
+    align-items: center;
+}
+
+.flex-item {
+    background-color: orange;
+    padding: 30px;
+    text-align: center;
+}
+
