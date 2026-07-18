@@ -19,156 +19,218 @@
 <body>
 
   <!-- HEADER -->
-  <header>
-    <img src="../images/gov_gr-thumb-540.png" style="height:80px" />
-    <nav>
-      <ul>
-        <li>
-          <span><i></i></span>
-        </li>
-        <li>
-          ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ <i></i>
-        </li>
-      </ul>
-    </nav>
+  <header class="bg-gov border-bottom border-5 border-bottom-gov">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div>
+          <img src="../images/gov_gr-thumb-540.png" alt="gov" class="img-fluid img-gov">
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul class="d-flex align-items-center gap-4 list-unstyled mb-0">
+            <li>
+              <span class="border border-white rounded p-2 text-white">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </li>
+            <li class="text-white">
+              <span>
+                ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ
+              </span>
+              <span class="ms-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <div>
-    <div>
+
+  <div class="container-fluid">
+    <div class="row">
 
       <!-- SIDEBAR -->
-      <aside>
-        <p><i></i> <a href="../index.html">Αρχική</a></p>
-        <p><i></i> Δηλώσεις Καθαρισμού</p>
-        <p>Προβολή Δηλώσεων</p>
-        <p>Υποβολή Δήλωσης</p>
+      <aside class="col-md-3 col-lg-2 bg-gov text-white p-4 min-vh-100">
+        <p>
+          <i class="fa-solid fa-house"></i>
+          <a href="../index.html" class="text-white text-decoration-none">
+            Αρχική
+          </a>
+        </p>
+        <p>
+          <i class="fa-solid fa-chevron-down"></i>
+          Δηλώσεις Καθαρισμού
+        </p>
+        <p class="ps-3 small">
+          Προβολή Δηλώσεων
+        </p>
+        <p class="ps-3 small text-warning">
+          Υποβολή Δήλωσης
+        </p>
       </aside>
 
       <!-- MAIN -->
-      <main>
-
-        <h1>Υποβολή Δήλωσης Καθαρισμού Οικοπέδου</h1>
+      <main class="col-md-9 p-4">
 
         <!-- STEPPER -->
-        <div>
-          <div>
-            <div style="width:40px;height:40px;">1</div>
-            <small>Στοιχεία Οικοπέδου</small>
+        <section>
+
+          <h1 class="text-center mb-5">
+            Υποβολή Δήλωσης Καθαρισμού Οικοπέδου
+          </h1>
+
+          <div class="row text-center align-items-center mb-5">
+
+            <div class="col">
+
+              <div class="stepper mx-auto">
+                1
+              </div>
+
+              <p class="mt-2">
+                Στοιχεία Οικοπέδου
+              </p>
+
+            </div>
+
+            <div class="col">
+              <hr>
+            </div>
+
+            <div class="col">
+
+              <div class="stepper active-step mx-auto">
+                2
+              </div>
+
+              <p class="mt-2">
+                Στοιχεία Ιδιοκτήτη
+              </p>
+
+            </div>
+
+            <div class="col">
+              <hr>
+            </div>
+
+            <div class="col">
+
+              <div class="stepper mx-auto">
+                3
+              </div>
+
+              <p class="mt-2">
+                Ενέργειες Πυρασφάλειας
+              </p>
+
+            </div>
+
           </div>
 
-          <div></div>
+        </section>
 
-          <div>
-            <div style="width:40px;height:40px;">2</div>
-            <small>Στοιχεία Ιδιοκτήτη</small>
-          </div>
+        <h2 class="text-center mb-3">Στοιχεία Ιδιοκτήτη/Αιτούντα</h2>
 
-          <div></div>
-
-          <div>
-            <div style="width:40px;height:40px;">3</div>
-            <small>Ενέργειες Πυρασφάλειας</small>
-          </div>
-        </div>
-
-        <h2>Στοιχεία Ιδιοκτήτη/Αιτούντα</h2>
-
-        <p>Παρακαλώ εισάγεται τα στοιχεία σας</p>
+        <p class="alert alert-secondary">Παρακαλώ εισάγεται τα στοιχεία σας</p>
 
         <!-- FORM -->
         <form>
 
-          <div>
-            <div>
-              <label>Όνομα*</label>
-              <div>
-                <input type="text" value="ΜΕΝΕΛΑΟΣ" disabled>
-                <span><i></i></span>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label small text-muted">Όνομα*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="ΜΕΝΕΛΑΟΣ" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
 
-            <div>
-              <label>Επώνυμο*</label>
-              <div>
-                <input type="text" value="ΓΟΥΛΑΝΔΡΗΣ" disabled>
-                <span><i></i></span>
+            <div class="col-md-6">
+              <label class="form-label small text-muted">Επώνυμο*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="ΓΟΥΛΑΝΔΡΗΣ" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
           </div>
 
           <!-- ΑΦΜ / Πατρώνυμο -->
-          <div>
-            <div>
-              <label>ΑΦΜ*</label>
-              <div>
-                <input type="text" value="111111111" disabled>
-                <span><i></i></span>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label small text-muted">ΑΦΜ*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="111111111" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
 
-            <div>
-              <label>Πατρώνυμο*</label>
-              <div>
-                <input type="text" value="ΓΕΩΡΓΙΟΣ" disabled>
-                <span><i></i></span>
+            <div class="col-md-6">
+              <label class="form-label small text-muted">Πατρώνυμο*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="ΓΕΩΡΓΙΟΣ" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
           </div>
 
           <!-- Τηλέφωνο / Email -->
-          <div>
-            <div>
-              <label>Τηλέφωνο*</label>
-              <div>
-                <input type="text" value="11888" disabled>
-                <span><i></i></span>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label small text-muted">Τηλέφωνο*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="11888" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
 
-            <div>
-              <label>e-mail*</label>
-              <div>
-                <input type="text" value="goulandris@gmail.com" disabled>
-                <span><i></i></span>
+            <div class="col-md-6">
+              <label class="form-label small text-muted">e-mail*</label>
+              <div class="input-group">
+                <input type="text" class="form-control bg-light" value="goulandris@gmail.com" disabled>
+                <span class="input-group-text bg-light"><i class="fa-solid fa-lock"></i></span>
               </div>
-              <small>Πεδία μόνο για προβολή</small>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
           </div>
 
           <!-- Διεύθυνση -->
-          <div>
-            <div>
-              <label>Διεύθυνση</label>
-              <input type="text" value="Μαριάς Κάπου" disabled>
-              <small>Πεδία μόνο για προβολή</small>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label class="form-label small text-muted">Διεύθυνση</label>
+              <input type="text" class="form-control bg-light" value="Μαριάς Κάπου" disabled>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
 
-            <div>
-              <label>Αριθμός</label>
-              <input type="text" value="4" disabled>
-              <small>Πεδία μόνο για προβολή</small>
+            <div class="col-md-4">
+              <label class="form-label small text-muted">Αριθμός</label>
+              <input type="text" class="form-control bg-light" value="4" disabled>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
 
-            <div>
-              <label>Τ.Κ</label>
-              <input type="text" value="14232" disabled>
-              <small>Πεδία μόνο για προβολή</small>
+            <div class="col-md-4">
+              <label class="form-label small text-muted">Τ.Κ</label>
+              <input type="text" class="form-control bg-light" value="14232" disabled>
+              <small class="text-info">Πεδία μόνο για προβολή</small>
             </div>
           </div>
 
           <!-- BUTTONS -->
-          <div>
-            <a href="./form-1.html">
-              <i></i> Πίσω
+          <div class="d-flex justify-content-between mt-4">
+            <a href="./form-1.html" class="btn btn-success">
+              <i class="fa-solid fa-less-than me-2"></i> Πίσω
             </a>
 
-            <a href="./form-3.html">
-              Επόμενο <i></i>
+            <a href="./form-3.html" class="btn btn-success">
+              Επόμενο <i class="fa-solid fa-greater-than ms-2"></i>
             </a>
           </div>
 
@@ -179,12 +241,26 @@
   </div>
 
   <!-- FOOTER -->
-  <footer>
-    <div>
-      <p><a href="">Όροι και προϋποθέσεις</a></p>
-      <p>Υλοποίηση για το <a href="">Υπουργείο Ψηφιακής Διακυβέρνησης</a></p>
+  <footer class="bg-footer border-top border-5 border-bottom-gov mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 py-4">
+          <p>
+            <a href="#" class="text-primary">Όροι και προϋποθέσεις</a>
+          </p>
+
+          <p>
+            Υλοποίηση για το
+            <a href="#" class="text-primary">Υπουργείο Ψηφιακής Διακυβέρνησης</a>
+          </p>
+
+        </div>
+
+        <div class="col-md-6 text-md-end text-center py-4">
+          <img class="img-footer" src="../images/government-logo2.svg" alt="gov logo">
+        </div>
+      </div>
     </div>
-    <img src="../images/government-logo2.svg" alt="">
   </footer>
 
 </body>
