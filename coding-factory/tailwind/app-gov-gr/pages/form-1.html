@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Στοιχεία Οικοπέδου</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-gov: #003475;
+      --color-bluegov: #083aa9;
+      --color-govgreen: #006736;
+      --color-lighgray-300: #cdccce;
+     }
+   </style>
+
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <div>
+
+        <img src="../images/gov_gr-thumb-540.png" />
+
+        <nav>
+          <ul>
+            <li>
+              <span>
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </li>
+
+            <li>
+              <span>ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ</span>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <div>
+
+    <aside>
+
+      <p>
+        <i class="fa-solid fa-house"></i>
+        <a href="../index.html">
+          Αρχική
+        </a>
+      </p>
+
+      <p>
+        <i class="fa-solid fa-chevron-down"></i>
+        Δηλώσεις Καθαρισμού
+      </p>
+
+      <p>Προβολή Δηλώσεων</p>
+      <p>Υποβολή Δήλωσης</p>
+
+    </aside>
+
+    <main>
+
+      <section>
+
+        <h1>
+          Υποβολή Δήλωσης Καθαρισμού Οικοπέδου
+        </h1>
+
+        <div>
+
+          <div>
+            <div class="stepper active-step">1</div>
+            <p>Στοιχεία Οικοπέδου</p>
+          </div>
+
+          <div><hr></div>
+
+          <div>
+            <div class="stepper">2</div>
+            <p>Στοιχεία Ιδιοκτήτη</p>
+          </div>
+
+          <div><hr></div>
+
+          <div>
+            <div class="stepper">3</div>
+            <p>Ενέργειες Πυρασφάλειας</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section>
+
+        <h2>
+          Στοιχεία Οικοπέδου
+        </h2>
+
+        <div>
+          Παρακαλώ εισάγεται στοιχεία οικοπέδου
+        </div>
+
+        <form>
+
+          <div>
+            <label>Εντοπισμός οικοπέδου:</label>
+
+            <label>
+              <input type="radio" name="fieldRadio" checked>
+              ΚΑΕΚ
+            </label>
+
+            <label>
+              <input type="radio" name="fieldRadio">
+              Συντεταγμένες (x,y)
+            </label>
+          </div>
+
+          <div>
+            <label>KAEK</label>
+            <input type="text">
+            <p>Εισάγεται το ΚΑΕΚ του οικοπέδου</p>
+          </div>
+
+          <div>
+
+            <div>
+              <label>Νομός</label>
+              <select>
+                <option>Χανίων</option>
+                <option>Αττικής</option>
+                <option>Ιωαννίνων</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Δήμος</label>
+              <select>
+                <option>Δήμος 1</option>
+                <option>Δήμος 2</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div>
+
+            <input type="text" placeholder="Δημοτική Ενότητα">
+            <input type="text" placeholder="Οικισμός">
+
+          </div>
+
+          <div>
+
+            <div>
+              <label>Οδός</label>
+              <input type="text">
+            </div>
+
+            <div>
+              <label>Αριθμός</label>
+              <input type="text">
+            </div>
+
+            <div>
+              <label>Τ.Κ</label>
+              <input type="text">
+            </div>
+
+          </div>
+
+          <div>
+            <a href="./form-2.html">
+              Επόμενο
+              <i class="fa-solid fa-greater-than"></i>
+            </a>
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+    <div>
+
+      <div>
+
+        <div>
+          <p><a href="#">Όροι και προϋποθέσεις</a></p>
+          <p>
+            Υλοποίηση για το
+            <a href="#">Υπουργείο Ψηφιακής Διακυβέρνησης</a>
+          </p>
+        </div>
+
+        <div>
+          <img src="../images/government-logo2.svg">
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
