@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Στοιχεία Ιδιοκτήτη</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-gov: #003475;
+        --color-bluegov: #083aa9;
+        --color-govgreen: #006736;
+        --color-lightgrey-300: #cdccce;
+      }
+  
+      .stepper {
+        @apply w-10 h-10 rounded-full bg-lightgrey-300 text-white flex items-center justify-center font-bold;
+      }
+  
+      .active-step {
+        @apply bg-blue-600;
+      }
+      </style>
+
+
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="bg-gov border-b-4 border-bluegov">
+  <div class="w-full px-4">
+    <div class="flex justify-between items-center py-2">
+
+      <img class="h-24 w-auto" src="../images/gov_gr-thumb-540.png" alt="gov">
+
+      <nav>
+        <ul class="flex items-center gap-6 text-white">
+          <li>
+            <span class="border border-white rounded p-2">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </li>
+
+          <li>
+            <span>ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+  <div class="flex">
+  
+    <aside class=" w-64 bg-gov text-white p-4 min-h-screen">
+  
+      <p class="mb-4">
+        <i class="fa-solid fa-house"></i>
+        <a href="../index.html" class="text-white hover:underline">
+          Αρχική
+        </a>
+      </p>
+  
+      <p class="mb-2">
+        <i class="fa-solid fa-chevron-down"></i>
+        Δηλώσεις Καθαρισμού
+      </p>
+  
+      <p class="ml-4 text-sm">Προβολή Δηλώσεων</p>
+      <p class="ml-4 text-sm text-yellow-400">Υποβολή Δήλωσης</p>
+  
+    </aside>
+
+    <main class="flex-1 p-6">
+    
+      <section>
+      
+        <h1 class="text-center text-2xl font-semibold mb-8">
+          Υποβολή Δήλωσης Καθαρισμού Οικοπέδου
+        </h1>
+      
+        <div class="grid grid-cols-5 items-center text-center mb-10">
+      
+          <div>
+            <div class="stepper mx-auto">1</div>
+            <p>Στοιχεία Οικοπέδου</p>
+          </div>
+      
+          <div>
+            <hr>
+          </div>
+      
+          <div>
+            <div class="stepper active-step5 mx-auto">2</div>
+            <p>Στοιχεία Ιδιοκτήτη</p>
+          </div>
+      
+          <div>
+            <hr>
+          </div>
+      
+          <div>
+            <div class="stepper mx-auto">3</div>
+            <p>Ενέργειες Πυρασφάλειας</p>
+          </div>
+      
+        </div>
+      
+      </section>
+    
+      <h2 class="text-center text-xl font-semibold mb-4">Στοιχεία Ιδιοκτήτη/Αιτούντα</h2>
+    
+      <div class="text-center bg-gray-200 text-gray-800 rounded mb-6 mx-20 p-3">
+        Παρακαλώ εισάγεται τα στοιχεία σας
+      </div>
+    
+      <!-- FORM -->
+      <form class="ml-4">
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          
+          <div>
+            <label>Όνομα*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="ΜΕΝΕΛΑΟΣ" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+          <div>
+            <label>Επώνυμο*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="ΓΟΥΛΑΝΔΡΗΣ" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+    
+          <div>
+            <label>ΑΦΜ*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="111111111" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+          <div>
+            <label>Πατρώνυμο*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="ΓΕΩΡΓΙΟΣ" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+    
+          <div>
+            <label>Τηλέφωνο*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="11888" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+          <div>
+            <label>e-mail*</label>
+            <div>
+              <input class="border border-gray-300 rounded p-2" type="text" value="goulandris@gmail.com" disabled>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+    
+          <div>
+            <label>Διεύθυνση</label>
+            <input class="border border-gray-300 rounded p-2" type="text" value="Μαριάς Κάπου" disabled>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+          <div>
+            <label>Αριθμός</label>
+            <input class="border border-gray-300 rounded p-2" type="text" value="4" disabled>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+          <div>
+            <label>Τ.Κ</label>
+            <input class="border border-gray-300 rounded p-2" type="text" value="14232" disabled>
+            <p class="text-sm text-gray-800 mt-1">Πεδία μόνο για προβολή</p>
+          </div>
+    
+        </div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+    
+        <div class="flex justify-between">
+    
+          <a class="btn bg-govgreen text-white px-6 py-3 rounded shadow hover:bg-green-700" href="./form-1.html">
+            <i class="fa-solid fa-less-than"></i> Πίσω
+          </a>
+    
+          <a class="btn bg-govgreen text-white px-6 py-3 rounded shadow hover:bg-green-700" href="./form-3.html">
+            Επόμενο <i class="fa-solid fa-greater-than"></i>
+          </a>
+    
+        </div>
+    
+      </form>
+    
+    </main>
+
+  </div>
+
+  <footer class="bg-lightgrey-300 border-t-4 border-bluegov mt-10">
+    <div class="px-4 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <p>
+            <a href="#">Όροι και προϋποθέσεις</a>
+          </p>
+  
+          <p>
+            Υλοποίηση για το
+            <a href="#">Υπουργείο Ψηφιακής Διακυβέρνησης</a>
+          </p>
+        </div>
+  
+        <div>
+          <img class="h-20 w-auto" src="../images/government-logo2.svg" alt="gov logo">
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
