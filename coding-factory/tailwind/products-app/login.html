@@ -8,54 +8,110 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-gray-200">
 
-<nav>
-  <div>
-    <a href="index.html">MyShop</a>
+<nav class="bg-blue-700 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a class="text-xl font-bold" href="index.html">MyShop</a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-300">Αρχική</a>
+      <a href="login.html" class="hover:text-yellow-300">Σύνδεση</a>
+      <a href="products.html" class="hover:text-yellow-300">Προϊόντα</a>
+
+      <div class="group">
+        <button>
+          Άλλο
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </button>
+
+        <div class="absolute bg-white text-black rounded shadow-lg hidden group-hover:block w-40 z-50">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Πληροφορίες</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Επικοινωνία</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuBtn" class="md:hidden text-3xl">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-blue-600 px-4 pb-4 space-y-2">
+    <a href="index.html" class="block hover:text-yellow-300">Αρχική</a>
+    <a href="login.html" class="block hover:text-yellow-300">Σύνδεση</a>
+    <a href="products.html" class="block hover:text-yellow-300">Προϊόντα</a>
 
     <div>
-      <a href="index.html">Αρχική</a>
-      <a href="login.html">Σύνδεση</a>
-      <a href="products.html">Προϊόντα</a>
+      <button onclick="toggleMobileDropdown()">
+        Άλλο
+        <span>▼</span>
+      </button>
+
+      <div id="mobileDropdown">
+        <a href="#" class="block hover:text-yellow-300">Πληροφορίες</a>
+        <a href="#" class="block hover:text-yellow-300">Επικοινωνία</a>
+      </div>
     </div>
   </div>
 </nav>
 
-<div>
-  <div>
+<div class="min-h-screen">
+  <div class="bg-white mt-20 w-80 mx-auto p-8">
 
-    <h2>Σύνδεση</h2>
+    <h2 class="text-center text-2xl font-bold mb-6">Σύνδεση</h2>
 
     <form>
-      <label>Email</label>
-      <input type="email">
+      <label class="block mb-2">Email</label>
+      <input class="w-full border px-3 py-2 rounded mb-4" type="email">
+ 
+      <label class="block mb-2">Κωδικός</label>
+      <input class="w-full border px-3 py-2 rounded mb-4" type="password">
 
-      <label>Κωδικός</label>
-      <input type="password">
-
-      <button>Είσοδος</button>
+      <button class="w-full bg-blue-600 text-white py-2 rounded">Είσοδος</button>
     </form>
 
-    <p>
-      <a href="#">Ξέχασα τον κωδικό</a>
+    <p class="text-center mt-4">
+      <a href="#" onclick="openModal()" class="text-blue-600">Ξέχασα τον κωδικό</a>
     </p>
 
   </div>
 </div>
 
-<div id="modal">
-  <div>
-    <h3>Ανάκτηση Κωδικού</h3>
+<!-- Modal -->
+<div id="modal" class="hidden fixed inset-0 flex items-center bg-black/50 ">
+  <div class="bg-white p-6 rounded shadow-lg w-80">
+    <h3 class="text-xl font-bold mb-4">Ανάκτηση Κωδικού</h3>
 
-    <input type="email" placeholder="Email">
+    <input class="w-full border px-3 py-2 rounded mb-4" type="email" placeholder="Email">
 
-    <div>
-      <button>Κλείσιμο</button>
-      <button>Αποστολή</button>
+    <div class="flex justify-end space-x-2">
+      <button onclick="closeModal()" class="px-4 py-2 bg-gray-300 rounded">Κλείσιμο</button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded">Αποστολή</button>
     </div>
   </div>
 </div>
 
+<footer class="bg-gray-800 text-white text-center py-4 mt-10">
+  © 2026 MyShop — All rights reserved
+</footer>
+
+<script>
+  function openModal() {
+    document.getElementById('modal').classList.toggle('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.add("hidden");
+  }
+</script>
 </body>
 </html>
